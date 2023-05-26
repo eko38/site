@@ -149,7 +149,6 @@
             font-size:1.6rem;
             text-decoration: none;
             color:#00026b;
-            önemsiz
         }
         
         .alt-kenar-10{
@@ -158,9 +157,28 @@
         p{color:white;}
         h2{color:white;}
 
-            .video1 {
-                margin-bottom: 20px;
-            }
+        .video1 {
+            margin-bottom: 20px;
+        }
+
+        .video-wr{
+display: flex;
+flex-direction: column;
+align-items: center;
+        }
+
+        .videos-container{
+            width: 100%;
+display: flex;
+justify-content: space-around;
+        }
+        .video-wr{
+            width: 100%;
+        }
+
+        .video1 .video2 {
+        }
+
         </style>
 </head>
 <body>
@@ -241,24 +259,28 @@
     <!-- sayfa altı-->
     <div class="arkaplan">
         <p>ARAÇLARIN TANITIMI VE TEST SÜRÜŞÜ</p></div>
-        <div>
+
+        <div class="videos-container">
+        <div class="video-wr">
             <span>BOSS 302</span>
-            <span>BOSS 429</span>
+                 <video width="750" height="500" controls class="video1">
+                 <source src="../videolar/boss302.mp4" type="video/mp4">
+            </video>
         </div>
+
+        <div class="video-wr"> 
+            <span>BOSS 429</span>
+            <video width="750" height="500" controls class="video2">
+                <source src="../videolar/boss429.mp4" type="video/mp4">
+            </video>
+        </div>
+</div>
         
         <div class="alt kapsayici">
             <div class="baglanti">
             </div>
         </div>
     </div>
-    <video width="750" height="500" controls class="video1">
-        <source src="../videolar/boss302.mp4" type="video/mp4">
-        <span>BOSS 302</span>  
-    </video>
-    
-    <video width="750" height="500" controls class="video2">
-        <source src="../videolar/boss429.mp4" type="video/mp4">
-        <span>BOSS 429</span>
-    </video>
+
 </body>
 </html>
